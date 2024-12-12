@@ -1,13 +1,57 @@
-<<<<<<< HEAD
-# MyPortfolio-Web
-A personal portfolio website built to showcase my skills, projects, and achievements as a web developer. Designed using modern technologies for an attractive and responsive user experience.
-=======
-# React + Vite
+# My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with **React** and **TailwindCSS**, showcasing my skills, projects, and achievements as a web developer. This project is designed to provide an attractive and responsive user experience.
 
-Currently, two official plugins are available:
+## Features
+- **Modern UI/UX**: Clean and elegant design for an engaging user experience.
+- **Responsive Design**: Fully optimized for all devices, including desktops, tablets, and mobile phones.
+- **Interactive Components**: Smooth animations and interactive elements built with React and TailwindCSS.
+- **Showcase Projects**: A section dedicated to highlighting my key projects and achievements.
+- **Contact Form**: Easy-to-use form for getting in touch with me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 94321c7 (Initial commit: Portfolio website)
+## Technologies Used
+- **React**: For building the interactive user interface.
+- **TailwindCSS**: For styling and responsiveness.
+- **GitHub Pages**: For deployment.
+
+## Getting Started
+
+### Prerequisites
+- Node.js and npm installed on your computer.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Seboo-Dogar/MyPortfolio-Web.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MyPortfolio-Web
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+Start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the website.
+
+## Deployment
+This portfolio will be deployed using **GitHub Pages**:
+1. Build the project for production:
+   ```bash
+   npm run build
+   ```
+2. Deploy the `dist` folder to GitHub Pages.
+
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Feel free to contribute, suggest improvements, or use this as inspiration for your own portfolio!
