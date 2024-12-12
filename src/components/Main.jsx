@@ -14,6 +14,12 @@ export default function Main() {
                         <a href="https://github.com/Seboo-Dogar" className="" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
                     </div>
                     <div className="">
+                        <h1>Hi, I'm Sohaib</h1>
+                        <h3>Frontend Developer</h3>
+                        <p>High level experience in web design and development knowledge, producing quality work.</p>
+                        <a href="./src/assets/MyCV.pdf" download="MyCV.pdf" className="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Download CV</a>
+                    </div>
+                    <div className="">
                         <img src="./src/assets/Seboo.png" alt="Seboo Profile" className="w-40 h-40"/>
                     </div>
                 </div>
