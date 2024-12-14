@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className='py-5'>
             <div className='container mx-auto flex justify-between items-center'>
-                <h1 className='text-2xl font-bold'>SEBOO</h1>
+                <h1 className='text-2xl font-bold'>SOHAIB</h1>
                 <nav className=''>
                     <ul className="flex items-center space-x-6 font-semibold">
                         <li><a href="#home" className="hover:underline">Home</a></li>
