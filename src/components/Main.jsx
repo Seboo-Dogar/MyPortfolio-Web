@@ -6,9 +6,14 @@ import { CgMouse } from "react-icons/cg";
 import { TiArrowDown } from "react-icons/ti";
 
 export default function Main() {
+
+    const mangeScrolling = () => {
+        document.getElementById("about").scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <>
-        <section className="py-10 h-screen">
+        <section className="py-10" style={{ height: "calc(100vh - 70px)" }} id="home">
             <div className="container mx-auto">
                 <div className="grid grid-cols-[1fr_3fr_4fr] auto-cols-auto">
                     <div className="space-x-4 my-auto">
@@ -22,7 +27,7 @@ export default function Main() {
                         <p className="text-base">I specialize in crafting dynamic and responsive web applications, leveraging modern technologies to deliver high-quality, user-friendly designs and seamless functionality.</p>
                         <a href="./src/assets/MyCV.pdf" download="MyCV.pdf" className="bg-[#6c55e1] text-white py-2 px-4 rounded-md inline-flex items-center">Download CV <FiDownload className="ml-2" /></a>
                         <div className="">
-                            <button className="inline-flex items-center mt-40 animate-bounce outline-none"><CgMouse className="mx-2 text-xl text-[#6c55e1]" /> Scroll Down<TiArrowDown /></button>
+                            <button onClick={mangeScrolling} className="inline-flex items-center mt-40 animate-bounce outline-none"><CgMouse className="mx-2 text-xl text-[#6c55e1]" /> Scroll Down<TiArrowDown /></button>
                         </div>
                     </div>
                     <div className="space-y-2 my-auto">
