@@ -5,7 +5,7 @@ import { FaRegMoon } from "react-icons/fa";
 
 export default function Header() {
     return (
-        <header className='py-5'>
+        <header className='py-5 fixed top-0 left-0 w-full z-50 bg-white'>
             <div className='container mx-auto flex justify-between items-center'>
                 <h1 className='text-2xl font-bold'>SOHAIB</h1>
                 <nav className=''>

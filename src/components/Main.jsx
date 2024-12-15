@@ -4,17 +4,8 @@ import { FiGithub } from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
 import { CgMouse } from "react-icons/cg";
 import { TiArrowDown } from "react-icons/ti";
-import { useEffect, useState } from "react";
 
 export default function Main() {
-
-    const [mainHeight, setMainHeight] = useState("100vh");
-    
-    useEffect(() => {
-        const header = document.querySelector("header");
-        const headerHeight = header.offsetHeight;
-        setMainHeight(`calc(100vh - ${headerHeight}px)`);
-      }, []);
 
     const mangeScrolling = () => {
         document.getElementById("about").scrollIntoView({behavior: "smooth"})
@@ -22,15 +13,15 @@ export default function Main() {
 
     return (
         <>
-        <section className="py-10" style={{height: mainHeight}} id="home">
-            <div className="container mx-auto">
+        <section className="py-10 h-screen flex" id="home">
+            <div className="container mx-auto flex justify-center items-center">
                 <div className="grid grid-cols-[1fr_3fr_4fr] auto-cols-auto">
                     <div className="space-x-4 my-auto">
                         <a href="https://www.linkedin.com/in/sohaib-aslam-dev/" className="hover:text-[#6c55e1] text-xl" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
                         <a href="#" className="hover:text-[#6c55e1] text-xl" target="_blank" rel="noopener noreferrer"><TfiWorld /></a>
                         <a href="https://github.com/Seboo-Dogar" className="hover:text-[#6c55e1] text-xl" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
                     </div>
-                    <div className="space-y-4 my-auto">
+                    <div className="space-y-4 my-auto pt-20">
                         <h1 className="text-5xl font-bold">Hi, I'm Sohaib</h1>
                         <h3 className="text-3x1 font-semibold">Frontend Developer</h3>
                         <p className="text-base">I specialize in crafting dynamic and responsive web applications, leveraging modern technologies to deliver high-quality, user-friendly designs and seamless functionality.</p>
