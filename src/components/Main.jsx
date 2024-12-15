@@ -30,7 +30,7 @@ export default function Main() {
                             <button onClick={mangeScrolling} className="inline-flex items-center mt-40 animate-bounce outline-none"><CgMouse className="mx-2 text-xl text-[#6c55e1]" /> Scroll Down<TiArrowDown /></button>
                         </div>
                     </div>
-                    <div className="space-y-2 my-auto">
+                    <div className="pt-10">
                         <img src="./src/assets/Seboo.png" alt="Seboo Profile" className="w-80 h-80 mx-auto"/>
                     </div>
                 </div>
