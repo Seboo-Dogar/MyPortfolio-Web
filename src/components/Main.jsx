@@ -4,8 +4,17 @@ import { FiGithub } from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
 import { CgMouse } from "react-icons/cg";
 import { TiArrowDown } from "react-icons/ti";
+import { useEffect, useState } from "react";
 
 export default function Main() {
+
+    const [mainHeight, setMainHeight] = useState("100vh");
+    
+    useEffect(() => {
+        const header = document.querySelector("header");
+        const headerHeight = header.offsetHeight;
+        setMainHeight(`calc(100vh - ${headerHeight}px)`);
+      }, []);
 
     const mangeScrolling = () => {
         document.getElementById("about").scrollIntoView({behavior: "smooth"})
@@ -13,7 +22,7 @@ export default function Main() {
 
     return (
         <>
-        <section className="py-10" style={{ height: "calc(100vh - 70px)" }} id="home">
+        <section className="py-10" style={{height: mainHeight}} id="home">
             <div className="container mx-auto">
                 <div className="grid grid-cols-[1fr_3fr_4fr] auto-cols-auto">
                     <div className="space-x-4 my-auto">
