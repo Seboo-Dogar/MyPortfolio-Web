@@ -29,17 +29,17 @@ export default function Skills() {
         <section className="h-screen flex items-center justify-center text-center" id="skills">
             <div className="container mx-auto">
                 <h2 className="text-5xl font-bold text-center mb-10">My Skills</h2>
-                <h3 className="text-lg font-semibold text-center my-2">Technologies and tools I excel at</h3>
+                <h3 className="text-lg text-center my-5">Technologies and tools I excel at</h3>
                 
                 <div className="flex flex-wrap gap-8 justify-center">
                     {skills.map((skill) => (
                         <div
                             key={skill.name}
-                            className="flex flex-col items-center justify-between w-36 h-40 bg-slate-100 p-4 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                            className="flex flex-col items-center justify-between w-36 h-40 bg-slate-100 p-4 hover:shadow-lg hover:border transition-shadow duration-300">
                             <div className="w-16 h-16 bg-white flex items-center justify-center p-2 rounded-full">
                                 <img src={skill.icon} alt={`${skill.name} icon`} className="w-10 h-10" />
                             </div>
-                            <p className="text-lg font-medium">{skill.name}</p>
+                            <p className="font-semibold">{skill.name}</p>
                             <p className="text-sm text-gray-600">{skill.proficiency}%</p>
                         </div>
                     ))}
