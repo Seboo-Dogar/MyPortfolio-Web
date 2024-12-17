@@ -40,7 +40,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="py-20 bg-gray-100" id="services">
+        <section className="py-20" id="services">
             <div className="container mx-auto">
                 <h2 className="text-5xl font-bold text-center mb-10">Our Services</h2>
                 <p className="text-lg text-gray-600 text-center mb-16">
@@ -50,7 +50,7 @@ export default function Services() {
                     {services.map((service) => (
                         <div
                             key={service.title}
-                            className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                            className="flex flex-col items-center text-center bg-slate-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="w-20 h-20 bg-gray-100 flex items-center justify-center p-4 rounded-full mb-6">
                                 <img src={service.icon} alt={`${service.title} icon`} className="w-12 h-12" />
