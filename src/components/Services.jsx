@@ -1,9 +1,6 @@
 // import WebDesignIcon from '../assets/icons/web-design.png';
 // import DevelopmentIcon from '../assets/icons/development.png';
-// import SEOIcon from '../assets/icons/seo.png';
-// import ECommerceIcon from '../assets/icons/ecommerce.png';
 // import MaintenanceIcon from '../assets/icons/maintenance.png';
-// import CustomSolutionsIcon from '../assets/icons/custom-solutions.png';
 
 export default function Services() {
     const services = [
@@ -18,24 +15,9 @@ export default function Services() {
             description: "Building fast, scalable, and responsive websites with modern technologies.",
         },
         {
-            title: "SEO Optimization",
-            // icon: SEOIcon,
-            description: "Improving your website's visibility and search engine rankings.",
-        },
-        {
-            title: "E-Commerce Solutions",
-            // icon: ECommerceIcon,
-            description: "Developing robust online stores with seamless user experiences.",
-        },
-        {
-            title: "Website Maintenance",
+            title: "Rebuild/Redesign Websites",
             // icon: MaintenanceIcon,
             description: "Ensuring your website stays updated, secure, and functional at all times.",
-        },
-        {
-            title: "Custom Solutions",
-            // icon: CustomSolutionsIcon,
-            description: "Providing tailored solutions to meet your unique business needs.",
         },
     ];
 
