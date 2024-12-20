@@ -1,57 +1,53 @@
 import { FaArrowRight } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
 
-// import WebDevIcon from '../assets/icons/web-development.png';
-// import WebDesignIcon from '../assets/icons/web-design.png';
-// import RebuildIcon from '../assets/icons/rebuild.png';
+import WebDevIcon from '../assets/icons/webDevelopment.png';
+import WebDesignIcon from '../assets/icons/webDesign.png';
+import RebuildIcon from '../assets/icons/webDesign.png';
 
 export default function Services() {
   const services = [
     {
       cardNumber: '01',
-    //   icon: WebDevIcon,
+      icon: WebDevIcon,
       title: 'Web Development',
-      description: 'Professional and responsive web development services to bring your ideas to life.',
-      fiverrUrl: 'https://www.fiverr.com/yourprofile',
+      description: 'I provide professional and responsive web development services, ensuring your ideas come to life with modern and efficient solutions.',
+      fiverrUrl: 'https://www.fiverr.com/',
     },
     {
       cardNumber: '02',
-    //   icon: WebDesignIcon,
+      icon: WebDesignIcon,
       title: 'Web Design',
-      description: 'Creative and modern web designs tailored to your needs and brand identity.',
-      fiverrUrl: 'https://www.fiverr.com/yourprofile',
+      description: 'Creative and visually appealing web designs tailored to reflect your brand identity and meet your unique needs.',
+      fiverrUrl: 'https://www.fiverr.com/',
     },
     {
       cardNumber: '03',
-    //   icon: RebuildIcon,
+      icon: RebuildIcon,
       title: 'Rebuild/Redesign',
-      description: 'Revamp and modernize your website for better performance and aesthetics.',
-      fiverrUrl: 'https://www.fiverr.com/yourprofile',
+      description: 'Transform and modernize your existing website with enhanced performance, usability, and aesthetics to stay ahead of the competition.',
+      fiverrUrl: 'https://www.fiverr.com/',
     },
   ];
 
   return (
-    <section className="py-20 bg-slate-50" id="services">
-      {/* Section Header */}
+    <section className="py-20 h-screen" id="services">
       <div className="container mx-auto text-center mb-10">
         <h2 className="text-4xl font-bold mb-4">My Services</h2>
         <p className="text-gray-600">Discover the professional services I offer to enhance your web presence.</p>
       </div>
 
-      {/* Services Cards */}
       <div className="flex flex-wrap justify-center gap-8">
         {services.map((service) => (
           <div
             key={service.cardNumber}
-            className="bg-white shadow-lg rounded-lg p-6 w-80 relative hover:shadow-2xl transition-shadow"
-          >
-            {/* Card Number */}
-            <div className="absolute top-4 left-4 text-gray-500 text-xl font-bold">{service.cardNumber}</div>
+            className="bg-slate-100 shadow-md p-6 w-80 relative hover:shadow-lg transition-shadow">
+          
+            <div className="absolute top-4 left-4 text-xl font-bold">{service.cardNumber}</div>
 
-            {/* Icon */}
             <div className="flex justify-center items-center mb-4">
-              <div className="w-16 h-16 bg-slate-100 flex items-center justify-center rounded-full">
-                <img src="" alt={`${service.title} Icon`} className="w-8 h-8" />
+              <div className="w-16 h-16 bg-white flex items-center justify-center rounded-full">
+                <img src={service.icon} alt={`${service.title} Icon`} className="w-8 h-8" />
               </div>
             </div>
 
