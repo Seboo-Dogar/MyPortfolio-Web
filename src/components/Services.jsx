@@ -1,9 +1,8 @@
-import { FaArrowRight } from "react-icons/fa";
-import { TiSocialTwitter } from "react-icons/ti";
-
+import { GoArrowRight } from "react-icons/go";
+import { TbBrandFiverr } from "react-icons/tb";
 import WebDevIcon from '../assets/icons/webDevelopment.png';
 import WebDesignIcon from '../assets/icons/webDesign.png';
-import RebuildIcon from '../assets/icons/webDesign.png';
+import RebuildIcon from '../assets/icons/redesign.png';
 
 export default function Services() {
   const services = [
@@ -24,7 +23,7 @@ export default function Services() {
     {
       cardNumber: '03',
       icon: RebuildIcon,
-      title: 'Rebuild/Redesign',
+      title: 'Web Rebuild/Redesign',
       description: 'Transform and modernize your existing website with enhanced performance, usability, and aesthetics to stay ahead of the competition.',
       fiverrUrl: 'https://www.fiverr.com/',
     },
@@ -45,30 +44,25 @@ export default function Services() {
           
             <div className="absolute top-4 left-4 text-xl font-bold">{service.cardNumber}</div>
 
-            <div className="flex justify-center items-center mb-4">
-              <div className="w-16 h-16 bg-white flex items-center justify-center rounded-full">
-                <img src={service.icon} alt={`${service.title} Icon`} className="w-8 h-8" />
+            <div className="flex justify-center items-center my-4">
+              <div className="w-20 h-20 flex items-center justify-center">
+                <img src={service.icon} alt={`${service.title} Icon`} className="w-20 h-20" />
               </div>
             </div>
 
-            {/* Title */}
-            <h3 className="text-xl font-bold text-center text-gray-800 mb-2">{service.title}</h3>
+            <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
+            <p className="text-sm text-justify mb-4">{service.description}</p>
 
-            {/* Description */}
-            <p className="text-sm text-gray-600 text-center mb-4">{service.description}</p>
-
-            {/* Buttons */}
             <div className="flex justify-between items-center">
-              <button className="flex items-center gap-2 bg-[#6c55e1] text-white py-2 px-4 rounded-md hover:bg-[#5740c5] transition">
-                Get Service <FaArrowRight />
+              <button className="flex items-center gap-2 bg-white py-2 px-4 rounded-full group">
+                Get Service <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
               </button>
               <a
                 href={service.fiverrUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 bg-green-500 rounded-full text-white text-lg hover:bg-green-600 transition"
-              >
-                <TiSocialTwitter />
+                className="flex items-center justify-center w-9 h-9 bg-green-400 rounded-full text-white text-lg hover:bg-green-600 transition">
+                <TbBrandFiverr/>
               </a>
             </div>
           </div>
