@@ -54,7 +54,7 @@ export default function Services() {
             <p className="text-sm text-justify mb-4">{service.description}</p>
 
             <div className="flex justify-between items-center">
-              <button className="flex items-center gap-2 bg-white py-2 px-4 rounded-full group">
+              <button className="flex items-center gap-2 bg-white py-2 px-4 rounded-full group" onClick={() => window.open(service.fiverrUrl, '_blank')}>
                 Get Service <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
               </button>
               <a
