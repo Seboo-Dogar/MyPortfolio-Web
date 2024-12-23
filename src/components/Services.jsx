@@ -32,7 +32,7 @@ export default function Services() {
   return (
     <section className="py-20 h-screen" id="services">
       <div className="container mx-auto text-center mb-10">
-        <h2 className="text-4xl font-bold mb-4">My Services</h2>
+        <h2 className="text-5xl font-bold mb-4">Services</h2>
         <p className="text-gray-600">Discover the professional services I offer to enhance your web presence.</p>
       </div>
 
