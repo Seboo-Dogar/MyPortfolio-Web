@@ -25,7 +25,7 @@ export default function Main() {
                         <h1 className="text-5xl font-bold">Hi, I'm Sohaib</h1>
                         <h3 className="text-3x1 font-semibold">Frontend Developer</h3>
                         <p className="text-base">I specialize in crafting dynamic and responsive web applications, leveraging modern technologies to deliver high-quality, user-friendly designs and seamless functionality.</p>
-                        <a href="./src/assets/MyCV.pdf" download="MyCV.pdf" className="bg-[#6c55e1] text-white py-2 px-4 rounded-md inline-flex items-center">Download CV <FiDownload className="ml-2" /></a>
+                        <a href="./src/assets/MyCV.pdf" download="MyCV.pdf" className="bg-[#6c55e1] text-white py-2 px-4 rounded-full inline-flex items-center hover:bg-[#5742d7] transition">Download CV <FiDownload className="ml-2" /></a>
                         <div className="">
                             <button onClick={mangeScrolling} className="inline-flex items-center mt-40 animate-bounce outline-none"><CgMouse className="mx-2 text-xl text-[#6c55e1]" /> Scroll Down<TiArrowDown /></button>
                         </div>
