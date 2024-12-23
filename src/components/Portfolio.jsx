@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FiCopy } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
 
@@ -40,7 +40,8 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="basis-2/3 bg-slate-200">
-          right</div>
+          right
+          </div>
         </div>
       </div>
     </section>
