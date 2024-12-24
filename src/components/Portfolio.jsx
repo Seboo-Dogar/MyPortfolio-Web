@@ -19,6 +19,37 @@ export default function Portfolio() {
       });
   };
 
+  const projects = [
+    {
+      title: "My Portfolio-Website", 
+      description: "An intuitive web-based resume builder for creating professional resumes.",
+      thumbnail: "",
+      languages: ["HTML", "JS", "Tailwind", "ReactJS"],
+    },
+    {
+      title: "Online Resume Builder-Web", 
+      description: "An intuitive web-based resume builder for creating professional resumes.",
+      thumbnail: "",
+      languages: ["HTML", "CSS", "JS"],
+    },
+    {
+      // title: "FoodBuddy - Order/Deliver", 
+      title: "Get GitHub Account Info", 
+      description: "A tool to fetch and display GitHub account information.",
+      thumbnail: "",
+      languages: ["HTML", "CSS", "ReactJS"],
+    },
+  ];
+  function getLanguageColor(language) {
+    const colors = {
+      HTML: "#e44d26",
+      CSS: "#2965f1",
+      JS: "#f0db4f",
+      ReactJS: "#61dafb",
+    };
+    return colors[language] || "#6b7280"; // Default color (gray)
+  }
+
   return (
     <section className="py-20 h-screen" id="portfolio">
       <div className="container mx-auto text-center mb-10">
@@ -40,7 +71,44 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="basis-2/3 bg-slate-200">
-          right
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
+        >
+          {/* Thumbnail */}
+          <img
+            src={project.thumbnail}
+            alt={project.title}
+            className="w-full h-40 object-cover"
+          />
+          
+          {/* Content */}
+          <div className="p-4">
+            <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+            <p className="text-gray-600 text-sm mb-4">
+              {project.description || "No description available."}
+            </p>
+            
+            {/* Languages */}
+            <div className="flex flex-wrap gap-2">
+              {project.languages.map((language, idx) => (
+                <span
+                  key={idx}
+                  className="text-xs text-white px-2 py-1 rounded-full"
+                  style={{
+                    backgroundColor: getLanguageColor(language),
+                  }}
+                >
+                  {language}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
           </div>
         </div>
       </div>
