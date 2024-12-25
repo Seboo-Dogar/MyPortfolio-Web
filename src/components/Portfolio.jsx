@@ -71,28 +71,23 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="basis-2/3 bg-slate-200">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+          <div className="space-y-6 p-5">
       {projects.map((project, index) => (
         <div
           key={index}
-          className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
+          className="flex bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
         >
-          {/* Thumbnail */}
-          <img
-            src={project.thumbnail}
-            alt={project.title}
-            className="w-full h-40 object-cover"
-          />
-          
           {/* Content */}
-          <div className="p-4">
-            <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              {project.description || "No description available."}
-            </p>
-            
+          <div className="w-2/3 p-4 flex flex-col justify-between">
+            <div>
+              <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                {project.description || "No description available."}
+              </p>
+            </div>
+
             {/* Languages */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {project.languages.map((language, idx) => (
                 <div
                   key={idx}
@@ -110,9 +105,17 @@ export default function Portfolio() {
               ))}
             </div>
           </div>
+
+          {/* Thumbnail */}
+          <img
+            src={project.thumbnail}
+            alt={project.title}
+            className="w-1/3 object-cover"
+          />
         </div>
       ))}
     </div>
+
           </div>
         </div>
       </div>
