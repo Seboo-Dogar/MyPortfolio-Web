@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FiCopy } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
+import ProjectOne from '../assets/project1.png';
 
 export default function Portfolio() {
   const [isCopied, setIsCopied] = useState(false);
@@ -22,8 +23,8 @@ export default function Portfolio() {
   const projects = [
     {
       title: "My Portfolio-Website", 
-      description: "An intuitive web-based resume builder for creating professional resumes.",
-      thumbnail: "",
+      description: "A personal portfolio website built to showcase my skills, projects, and achievements as a web developer. Designed using modern technologies for an attractive and responsive user experience.",
+      thumbnail: ProjectOne,
       languages: ["HTML", "JS", "Tailwind", "ReactJS"],
     },
     {
@@ -70,52 +71,39 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div className="basis-2/3 bg-slate-200">
-          <div className="space-y-6 p-5">
-      {projects.map((project, index) => (
-        <div
-          key={index}
-          className="flex bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
-        >
-          {/* Content */}
-          <div className="w-2/3 p-4 flex flex-col justify-between">
-            <div>
-              <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                {project.description || "No description available."}
-              </p>
-            </div>
 
-            {/* Languages */}
-            <div className="flex flex-wrap gap-3">
-              {project.languages.map((language, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center space-x-2 text-xs text-gray-800"
-                >
-                  {/* Circle */}
-                  <span
-                    className="w-3 h-3 rounded-full"
-                    style={{
-                      backgroundColor: getLanguageColor(language),
-                    }}
-                  ></span>
-                  <span>{language}</span>
+          <div className="basis-2/3">
+            <div className="space-y-4 p-5">
+              {projects.map((project, index) => (
+                <div key={index} className="flex bg-slate-100 p-4 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+
+                  <div className="w-2/3 flex flex-col">
+                    <div className='text-left'>
+                      <h3 className="font-semibold">{project.title}</h3>
+                      <p className="text-gray-600 text-sm mb-1">
+                        {project.description || "No description available."}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3">
+                      {project.languages.map((language, idx) => (
+                        <div key={idx} className="flex items-center space-x-2 text-xs text-gray-800">
+                          {/* Circle */}
+                          <span className="w-3 h-3 rounded-full"
+                            style={{
+                              backgroundColor: getLanguageColor(language),
+                            }}
+                          ></span>
+                          <span>{language}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <img src={project.thumbnail} alt={project.title} className="w-1/3 object-cover border" />
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Thumbnail */}
-          <img
-            src={project.thumbnail}
-            alt={project.title}
-            className="w-1/3 object-cover"
-          />
-        </div>
-      ))}
-    </div>
-
           </div>
         </div>
       </div>
