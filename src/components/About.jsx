@@ -39,7 +39,7 @@ export default function About() {
             <div className="container mx-auto">
                 <h2 className="text-5xl font-bold mb-10">About Me</h2>
                 <div className="flex space-x-10 justify-center">
-                    <div className="bg-slate-100 space-y-5 text-justify p-10 w-1/2">
+                    <div className="bg-slate-100 space-y-5 text-justify p-10 w-full md:w-1/2">
                         <p>I am a passionate Front-End Developer with a BS in Software Engineering from the Virtual University of Pakistan. I specialize in crafting responsive and user-friendly web applications using technologies like HTML, CSS, JavaScript, ReactJS, TailwindCSS, Bootstrap, SQL, C++, WordPress, and Git & GitHub.I also have good knowledge of UI/UX design, enabling me to create visually appealing and intuitive interfaces.</p>
                         <p>Currently, I am expanding my expertise in full-stack development, driven by my commitment to continuous learning and innovation. With a strong foundation in modern development practices, I strive to deliver impactful and efficient solutions while contributing meaningfully to the tech industry.</p>
                         <p className="text-[#6c55e1] font-semibold">- Sohaib Aslam</p>
@@ -58,7 +58,7 @@ export default function About() {
                         {cards.map((card) => (
                             <div
                                 key={card.id}
-                                className="border p-2 text-left flex items-center space-x-4 cursor-pointer hover:shadow-md hover:bg-slate-50"
+                                className="border p-2 text-left flex items-center space-x-4 cursor-pointer hover:shadow-md hover:bg-slate-50 transition-transform duration-300"
                                 onClick={() => window.open(card.link, "_blank")}>
                                 <div>
                                     <card.icon className="text-4xl" />
@@ -69,7 +69,7 @@ export default function About() {
                                         <span className="font-thin text-sm">{card.idName}</span>
                                     </h3>
                                     <p className="text-sm">{card.title}</p>
-                                    {card.extraIcon && <card.extraIcon className="inline-flex" />}
+                                    {card.extraIcon && <card.extraIcon className="inline-flex mr-1" />}
                                     {card.extraInfo && <label className="text-sm"> {card.extraInfo}</label>}
                                 </div>
                             </div>

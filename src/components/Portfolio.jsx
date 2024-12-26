@@ -89,7 +89,7 @@ export default function Portfolio() {
                     <div className="flex flex-wrap gap-3">
                       {project.languages.map((language, idx) => (
                         <div key={idx} className="flex items-center space-x-2 text-xs text-gray-800">
-                          {/* Circle */}
+
                           <span className="w-3 h-3 rounded-full"
                             style={{
                               backgroundColor: getLanguageColor(language),
