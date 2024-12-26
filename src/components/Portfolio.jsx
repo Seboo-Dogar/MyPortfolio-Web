@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiCopy } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
 import ProjectOne from '../assets/project1.png';
+import { MdOpenInNew } from "react-icons/md";
 
 export default function Portfolio() {
   const [isCopied, setIsCopied] = useState(false);
@@ -104,6 +105,7 @@ export default function Portfolio() {
                 </div>
               ))}
             </div>
+            <a href="https://github.com/Seboo-Dogar?tab=repositories" target='_blank' className="bg-[#6c55e1] text-white py-2 px-4 rounded-full inline-flex items-center hover:bg-[#5742d7] transition">See all <MdOpenInNew className="ml-2" /></a>
           </div>
         </div>
       </div>
