@@ -38,7 +38,7 @@ export default function About() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-5xl font-bold mb-10">About Me</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div className="bg-slate-100 p-6 shadow-sm space-y-5 text-justify">
+                    <div className="bg-slate-100 p-6 shadow space-y-5 text-justify">
                         <p>
                             I am a passionate Front-End Developer with a BS in Software Engineering
                             from the Virtual University of Pakistan. I specialize in crafting
@@ -71,7 +71,7 @@ export default function About() {
                             <button
                                 key={card.id}
                                 onClick={() => window.open(card.link, "_blank")}
-                                className="border p-4 text-left flex items-center space-x-4 cursor-pointer hover:shadow-md hover:bg-slate-50 transition-transform duration-300 w-full"
+                                className="border p-4 text-left flex items-center space-x-4 cursor-pointer hover:shadow hover:bg-slate-50 transition-transform duration-300 w-full"
                                 aria-label={`Visit ${card.name}'s profile`}
                             >
                                 <div>
