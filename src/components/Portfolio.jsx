@@ -50,35 +50,41 @@ export default function Portfolio() {
 
   return (
     <section className="py-20 min-h-screen" id="portfolio">
-      <div className="container mx-auto text-center mb-10">
-        <h2 className="text-5xl font-bold mb-4">Portfolio</h2>
-        <div className="flex">
-          <div className="w-1/2 space-y-5 text-justify p-10">
+      <div className="container mx-auto px-6 lg:px-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">Portfolio</h2>
+
+        <div className="flex flex-col md:flex-row gap-10">
+          <div className="md:w-1/2 space-y-5 text-justify">
             <p>This portfolio highlights some of my best work, showcasing the blend of creativity and technical expertise I bring to every project. 
               From elegant static websites to advanced React-based applications, my GitHub repositories feature a diverse range of projects that demonstrate my skills in front-end development.
-              Each project is a testament to my proficiency in combining clean code with aesthetic design principles. I invite you to explore my repositories, including my latest creations, 
+            </p>
+            <p>Each project is a testament to my proficiency in combining clean code with aesthetic design principles. I invite you to explore my repositories, including my latest creations, 
               where I have implemented cutting-edge technologies and best practices to solve real-world problems and enhance user experiences.
             </p>
+
             <div className="flex items-center justify-center">
-              <div className="bg-slate-100 shadow p-2 inline-flex rounded-full px-5 w-full sm:w-auto">
-                <a href={githubLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{githubLink}</a>
+              <div className="bg-slate-100 shadow p-2 inline-flex rounded-full px-5 w-auto">
+                <a href={githubLink} target="_blank" rel="noopener noreferrer" className="hover:underline truncate">{githubLink}</a>
+                
                 <button onClick={handleCopy} aria-label="Copy GitHub link" className="ml-2">
-                  {isCopied ? <FaCheck /> : <FiCopy />}
+                  {isCopied ? <FaCheck className="text-[#6c55e1]" /> : <FiCopy />}
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="basis-2/3">
-            <div className="space-y-4 p-5">
+          <div className="md:w-1/2">
+            <div className="space-y-3">
               {projects.map((project, index) => (
-                <div key={index} className="flex flex-col bg-slate-100 p-4 shadow overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="text-left px-4">
+                <div key={index} className="flex flex-col bg-slate-100 p-4 shadow hover:shadow-md transition-shadow rounded-lg">
+                  <div className="text-left">
                     <h3 className="font-semibold">{project.title}</h3>
-                    <p className="text-gray-600 text-sm mb-2">
+
+                    <p className="text-gray-600 text-sm mb-3">
                       {project.description || "No description available."}
                     </p>
-                    <div className="flex flex-wrap gap-3">
+
+                    <div className="flex flex-wrap gap-2">
                       {project.languages.map((language, idx) => (
                         <div key={idx} className="flex items-center space-x-2 text-xs text-gray-800">
                           <span className="w-3 h-3 rounded-full"
@@ -92,8 +98,11 @@ export default function Portfolio() {
                 </div>
               ))}
             </div>
-            <a href="https://github.com/Seboo-Dogar?tab=repositories" target="_blank" className="bg-[#6c55e1] text-white py-2 px-4 rounded-full inline-flex items-center hover:bg-[#5742d7] transition">
-              See all <MdOpenInNew className="ml-2" />
+            
+            <a href="https://github.com/Seboo-Dogar?tab=repositories" target="_blank" 
+              className="bg-[#6c55e1] text-white py-2 px-6 rounded-full inline-flex items-center my-2 hover:bg-[#5742d7] transition text-sm sm:text-base"
+              >
+                See all <MdOpenInNew className="ml-2" />
             </a>
           </div>
         </div>
