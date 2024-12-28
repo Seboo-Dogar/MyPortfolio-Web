@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="container mx-auto text-center p-10">
                 <div className="flex flex-col items-center gap-8">
                     <div className="w-48 h-48 bg-slate-100 rounded-full flex items-center justify-center p-6">
-                        <img src={DealIcon} alt="" className=""/>
+                        <img src={DealIcon} alt="Handshake icon" className=""/>
                     </div>
                     <h2 className="text-5xl font-bold text-center mb-4">Tell me about your next project.</h2>
                     <div className="flex flex-wrap justify-center gap-4">
