@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { FiCopy } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
-import ProjectOne from '../assets/project1.png';
-import defaultProject from '../assets/default-thumbnail.png';
 import { MdOpenInNew } from "react-icons/md";
 
 export default function Portfolio() {
