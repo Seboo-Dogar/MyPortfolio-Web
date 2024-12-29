@@ -2,24 +2,28 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <footer className="">
-            <div className="container mx-auto flex items-center justify-between text-center border-t p-6 border-gray-500">
-                <div className="flex space-x-4">
+        <footer className="border-t border-gray-300">
+            <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between text-center p-4 sm:p-6 space-y-4 sm:space-y-0">
+                
+                <div className="flex space-x-4 justify-center">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <FaFacebook className="text-xl hover:text-[#6c55e1]" />
+                        <FaFacebook className="text-xl hover:text-[#6c55e1] transition-colors" />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <FaTwitter className="text-xl hover:text-[#6c55e1]" />
+                        <FaTwitter className="text-xl hover:text-[#6c55e1] transition-colors" />
                     </a>
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <FaLinkedin className="text-xl hover:text-[#6c55e1]" />
+                        <FaLinkedin className="text-xl hover:text-[#6c55e1] transition-colors" />
                     </a>
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <FaGithub className="text-xl hover:text-[#6c55e1]" />
+                        <FaGithub className="text-xl hover:text-[#6c55e1] transition-colors" />
                     </a>
                 </div>
+
                 <div>
-                    <p className="text-sm">&copy; {new Date().getFullYear()} Sohaib Aslam. All rights reserved.</p>
+                    <p className="text-sm text-gray-600">
+                        &copy; {new Date().getFullYear()} Sohaib Aslam. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
