@@ -76,7 +76,7 @@ export default function Portfolio() {
           <div className="md:w-1/2">
             <div className="space-y-3">
               {projects.map((project, index) => (
-                <div key={index} className="flex flex-col bg-slate-100 p-4 shadow hover:shadow-md transition-shadow rounded-lg">
+                <div key={index} className="flex flex-col bg-slate-100 p-4 shadow hover:shadow-md transition-shadow">
                   <div className="text-left">
                     <h3 className="font-semibold">{project.title}</h3>
 
