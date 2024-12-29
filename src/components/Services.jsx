@@ -31,22 +31,22 @@ export default function Services() {
 
   return (
     <section className="py-20 min-h-screen" id="services">
-      <div className="container mx-auto text-center mb-10">
+      <div className="container mx-auto px-4 text-center mb-10 ">
         <h2 className="text-5xl font-bold mb-4">Services</h2>
-        <p className="text-gray-600">Discover the professional services I offer to enhance your web presence.</p>
+        <p className="text-gray-600 text-base">Discover the professional services I offer to enhance your web presence.</p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 p-5">
         {services.map((service) => (
           <div
             key={service.cardNumber}
-            className="bg-slate-100 shadow p-6 w-full sm:w-72 md:w-80 relative hover:shadow-md transition-shadow duration-1000 transform hover:scale-105">
+            className="bg-slate-100 shadow p-6 w-80 relative hover:shadow-md transition-shadow duration-1000 transform hover:scale-105">
           
             <div className="absolute top-4 left-4 text-xl font-bold text-gray-600 px-2">{service.cardNumber}</div>
 
             <div className="flex justify-center items-center my-4">
               <div className="w-20 h-20 flex items-center justify-center">
-                <img src={service.icon} alt={`${service.title} Icon`} className="w-20 h-20" />
+                <img src={service.icon} alt={`${service.title} Icon`} className="w-full h-full" />
               </div>
             </div>
 
