@@ -49,18 +49,20 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="py-20 min-h-screen" id="portfolio">
-      <div className="container mx-auto px-6 lg:px-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">Portfolio</h2>
+    <section className="py-20 h-screen" id="portfolio">
+      <div className="container mx-auto px-4 lg:px-10">
+        <h2 className="text-5xl sm:text-4xl md:text-5xl font-bold text-center mb-10">Portfolio</h2>
 
-        <div className="flex flex-col md:flex-row gap-10">
-          <div className="md:w-1/2 space-y-5 text-justify">
-            <p>This portfolio highlights some of my best work, showcasing the blend of creativity and technical expertise I bring to every project. 
-              From elegant static websites to advanced React-based applications, my GitHub repositories feature a diverse range of projects that demonstrate my skills in front-end development.
-            </p>
-            <p>Each project is a testament to my proficiency in combining clean code with aesthetic design principles. I invite you to explore my repositories, including my latest creations, 
-              where I have implemented cutting-edge technologies and best practices to solve real-world problems and enhance user experiences.
-            </p>
+        <div className="flex flex-col items-center md:flex-row gap-12">
+          <div className="md:w-1/2 space-y-5 ">
+            <div className='text-justify space-y-6'>
+              <p>This portfolio highlights some of my best work, showcasing the blend of creativity and technical expertise I bring to every project. 
+                From elegant static websites to advanced React-based applications, my GitHub repositories feature a diverse range of projects that demonstrate my skills in front-end development.
+              </p>
+              <p>Each project is a testament to my proficiency in combining clean code with aesthetic design principles. I invite you to explore my repositories, including my latest creations, 
+                where I have implemented cutting-edge technologies and best practices to solve real-world problems and enhance user experiences.
+              </p>
+            </div>
 
             <div className="flex items-center justify-center">
               <div className="bg-slate-100 shadow p-2 inline-flex rounded-full px-5 w-auto">

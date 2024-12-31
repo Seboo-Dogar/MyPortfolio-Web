@@ -34,7 +34,7 @@ export default function About() {
     ];
 
     return (
-        <section className="h-screen flex items-center justify-center text-center" id="about">
+        <section className="h-screen flex items-center justify-center text-center py-20" id="about">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-5xl font-bold mb-10">About Me</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">

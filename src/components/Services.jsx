@@ -30,10 +30,10 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 min-h-screen" id="services">
+    <section className="py-20 h-screen" id="services">
       <div className="container mx-auto px-4 text-center mb-10 ">
         <h2 className="text-5xl font-bold mb-4">Services</h2>
-        <p className="text-gray-600 text-base">Discover the professional services I offer to enhance your web presence.</p>
+        <p className="text-gray-600 text-base my-5">Discover the professional services I offer to enhance your web presence.</p>
       
         <div className="flex flex-wrap justify-center gap-8">
           {services.map((service) => (
