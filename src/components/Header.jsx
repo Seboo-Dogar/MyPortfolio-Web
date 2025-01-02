@@ -1,20 +1,27 @@
-import { useState, useEffect } from "react";
-import { FaRegMoon } from "react-icons/fa";
+import { useState, useEffect, useMemo } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { BsQrCodeScan } from "react-icons/bs";
+
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
+  const url = window.location.href;
+
+  const handleQRClick = () => {
+    window.open(`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(url)}&size=200x200`, '_blank');
+  };
     
-  const sections = [
+  const sections = useMemo(
+    () => [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Skills", id: "skills" },
     { name: "Services", id: "services" },
     { name: "Portfolio", id: "portfolio" },
     { name: "Contact", id: "contact" },
-    ];
+    ],[])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +68,7 @@ export default function Header() {
               </li>
               ))}
               <li>  
-                <a href="#nightMood" className="block px-5 py-2 md:px-0"><FaRegMoon /></a>
+                <a href="#nightMood" className="block px-5 py-2 md:px-0 text-[#6c55e1] text-xl" onClick={handleQRClick}><BsQrCodeScan /></a>
               </li>
           </ul>
         </nav>
