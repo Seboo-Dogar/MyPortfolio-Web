@@ -12,11 +12,11 @@ export default function Main() {
 
     return (
         <>
-            <section className="py-10 h-screen flex" id="home">
+            <section className="py-20 lg:h-screen flex" id="home">
                 <div className="container mx-auto flex justify-center items-center px-10 lg:px-5">
-                    <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_3fr_4fr] gap-0 md:gap-6 items-center sm:py-20">
+                    <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_3fr_4fr] gap-0 md:gap-6 items-center">
                         {/* Mobile-first: Image first */}
-                        <div className="flex justify-center order-1 md:order-2 lg:order-3 pt-28 sm:pt-0">
+                        <div className="flex justify-center order-1 md:order-2 lg:order-3 sm:pt-0">
                             <img
                                 src="./src/assets/Seboo.png"
                                 alt="Seboo Profile"

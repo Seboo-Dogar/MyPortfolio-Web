@@ -26,12 +26,12 @@ export default function Skills() {
     ];
 
     return (
-        <section className="h-screen flex items-center justify-center text-center py-20" id="skills">
-            <div className="container mx-auto px-4 mb-10">
-                <h2 className="text-5xl font-bold mb-4">My Skills</h2>
+        <section className="lg:h-screen flex py-10 md:py-20" id="skills">
+            <div className="container mx-auto  items-center justify-center text-center md:px-10 lg:px-5 gap-4">
+                <h2 className="text-4xl lg:text-5xl font-bold">My Skills</h2>
                 <p className="text-gray-600 my-5">Technologies and tools I excel at</p>
                 
-                <div className="flex flex-wrap gap-8 justify-center">
+                <div className="flex flex-wrap gap-5 md:gap-8 justify-center">
                     {skills.map((skill) => (
                         <div
                             key={skill.name}
