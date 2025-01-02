@@ -49,9 +49,9 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="py-20 h-screen" id="portfolio">
-      <div className="container mx-auto px-4 lg:px-10">
-        <h2 className="text-5xl sm:text-4xl md:text-5xl font-bold text-center mb-10">Portfolio</h2>
+    <section className="lg:h-screen flex py-10 md:py-20" id="portfolio">
+      <div className="container mx-auto justify-center items-center text-center px-10 lg:px-5">
+        <h2 className="text-4xl lg:text-5xl font-bold mb-10">Portfolio</h2>
 
         <div className="flex flex-col items-center md:flex-row gap-12">
           <div className="md:w-1/2 space-y-5 ">
