@@ -56,6 +56,7 @@ export default function About() {
                         </p>
                         <p className="text-[#6c55e1] font-semibold">- Sohaib Aslam</p>
                     </div>
+                    
                     <div className="space-y-6">
                         <div className="grid grid-cols-2 gap-6 py-6">
                             {stats.map((stat) => (
