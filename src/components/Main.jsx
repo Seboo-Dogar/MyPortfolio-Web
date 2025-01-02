@@ -59,7 +59,7 @@ export default function Main() {
                         </div>
 
                         {/* Social Icons */}
-                        <div className="flex justify-center lg:flex-col md:flex-row space-x-4 md:space-x-4 lg:space-x-0 lg:space-y-4 order-3 md:order-2 lg:order-1 my-5 sm:my-0">
+                        <div className="flex justify-center md:justify-start lg:flex-col md:flex-row space-x-4 md:space-x-4 lg:space-x-0 lg:space-y-4 order-3 md:order-2 lg:order-1 my-5 sm:my-0">
                             <a
                                 href="https://www.linkedin.com/in/sohaib-aslam-dev/"
                                 className="hover:text-[#6c55e1] text-xl"
