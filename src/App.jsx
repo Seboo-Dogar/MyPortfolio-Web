@@ -15,7 +15,7 @@ function App() {
       <Main/>
       <About/>
       <Skills/>
-      {/* <Services/> */}
+      <Services/>
       {/* <Portfolio/> */}
       {/* <Contact/> */}
       {/* <Footer/> */}

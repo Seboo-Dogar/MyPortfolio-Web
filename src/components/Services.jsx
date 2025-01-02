@@ -30,9 +30,9 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 h-screen" id="services">
-      <div className="container mx-auto px-4 text-center mb-10 ">
-        <h2 className="text-5xl font-bold mb-4">Services</h2>
+    <section className="lg:h-screen flex py-10 md:py-20" id="services">
+      <div className="container mx-auto px-4 text-center md:px-10 lg:px-5 gap-4">
+        <h2 className="text-4xl lg:text-5xl font-bold">Services</h2>
         <p className="text-gray-600 text-base my-5">Discover the professional services I offer to enhance your web presence.</p>
       
         <div className="flex flex-wrap justify-center gap-8">
