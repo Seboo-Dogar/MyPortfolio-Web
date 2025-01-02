@@ -49,7 +49,7 @@ export default function Portfolio() {
   }
 
   return (
-    <section className="lg:h-screen flex py-10 md:py-20" id="portfolio">
+    <section className="lg:h-screen flex py-16 md:py-20" id="portfolio">
       <div className="container mx-auto justify-center items-center text-center px-10 lg:px-5">
         <h2 className="text-4xl lg:text-5xl font-bold mb-10">Portfolio</h2>
 

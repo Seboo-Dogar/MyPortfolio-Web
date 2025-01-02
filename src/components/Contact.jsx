@@ -3,8 +3,8 @@ import DealIcon from "../assets/deal.png";
 
 export default function Contact() {
     return (
-        <section className="py-20 min-h-screen flex items-center" id="contact">
-            <div className="container mx-auto text-center px-6 md:px-10">
+        <section className="lg:h-screen flex py-20" id="contact">
+            <div className="container mx-auto  items-center justify-center text-center px-10 lg:px-5">
                 <div className="flex flex-col items-center gap-8">
                     <div className="w-36 h-36 md:w-48 md:h-48 bg-slate-100 rounded-full flex items-center justify-center p-4 md:p-6">
                         <img src={DealIcon} alt="Handshake icon" className="w-3/4 h-3/4 object-contain"/>

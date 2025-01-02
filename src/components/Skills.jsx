@@ -26,7 +26,7 @@ export default function Skills() {
     ];
 
     return (
-        <section className="lg:h-screen flex py-10 md:py-20" id="skills">
+        <section className="lg:h-screen flex py-16 md:py-20" id="skills">
             <div className="container mx-auto  items-center justify-center text-center md:px-10 lg:px-5 gap-4">
                 <h2 className="text-4xl lg:text-5xl font-bold">My Skills</h2>
                 <p className="text-gray-600 my-5">Technologies and tools I excel at</p>
