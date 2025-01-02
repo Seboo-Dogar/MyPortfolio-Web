@@ -2,10 +2,10 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <footer className="border-t border-gray-300">
-            <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between text-center p-4 space-y-4">
+        <footer className="border-t border-gray-300 py-6">
+            <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between text-center px-4">
                 
-                <div className="flex space-x-4 justify-center">
+                <div className="flex space-x-4 items-baseline">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <FaFacebook className="text-xl hover:text-[#6c55e1] transition-colors" />
                     </a>
@@ -20,8 +20,8 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <div>
-                    <p className="text-xs lg:text-base md:text-sm text-gray-600">
+                <div className="mt-4 md:mt-0">
+                    <p className="text-xs md:text-sm lg:text-base text-gray-600">
                         &copy; {new Date().getFullYear()} Sohaib Aslam. All rights reserved.
                     </p>
                 </div>
