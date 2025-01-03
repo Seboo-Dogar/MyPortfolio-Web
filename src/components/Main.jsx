@@ -4,6 +4,7 @@ import { FiGithub } from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
 import { CgMouse } from "react-icons/cg";
 import { TiArrowDown } from "react-icons/ti";
+import SebooImg from '../assets/Seboo.png';
 
 export default function Main() {
     const mangeScrolling = () => {
@@ -18,7 +19,7 @@ export default function Main() {
                         {/* Mobile-first: Image first */}
                         <div className="flex justify-center order-1 md:order-2 lg:order-3 sm:pt-0">
                             <img
-                                src="./src/assets/Seboo.png"
+                                src={SebooImg}
                                 alt="Seboo Profile"
                                 className="w-60 h-60 lg:w-80 lg:h-80 object-cover"
                             />
