@@ -68,7 +68,7 @@ export default function Header() {
               </li>
               ))}
               <li>  
-                <a href="#nightMood" className="block px-5 py-2 md:px-0 text-[#6c55e1] text-xl" onClick={handleQRClick}><BsQrCodeScan /></a>
+                <a href="#QRCode" className="block px-5 py-2 md:px-0 text-[#6c55e1] text-xl" onClick={handleQRClick}><BsQrCodeScan /></a>
               </li>
           </ul>
         </nav>
