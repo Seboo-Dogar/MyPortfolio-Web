@@ -39,8 +39,8 @@ export default function Main() {
 
                             {/* Download Button */}
                             <a
-                                href="./src/assets/MyCV.pdf"
-                                download="MyCV.pdf"
+                                href="./Sohaib Aslam-Resume.pdf"
+                                download="Sohaib Aslam-Resume.pdf"
                                 className="bg-[#6c55e1] text-white py-2 px-4  rounded-full inline-flex items-center hover:bg-[#5742d7] transition"
                             >
                                 Download CV <FiDownload className="ml-2" />
