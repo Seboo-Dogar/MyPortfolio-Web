@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { FiCopy } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
 import { MdOpenInNew } from "react-icons/md";
+import { githubLink, projects, getLanguageColor } from "../data/projectsData";
 
 export default function Portfolio() {
   const [isCopied, setIsCopied] = useState(false);
-  const githubLink = 'https://github.com/Seboo-Dogar'; // Replace with your actual GitHub username
 
   const handleCopy = () => {
     navigator.clipboard.writeText(githubLink)
@@ -13,40 +13,12 @@ export default function Portfolio() {
         setIsCopied(true);
         setTimeout(() => {
           setIsCopied(false);
-        }, 1500); // Reset after 1.5 seconds
+        }, 1500);
       })
       .catch((err) => {
         console.error('Failed to copy: ', err);
       });
   };
-
-  const projects = [
-    {
-      title: "My Portfolio-Website", 
-      description: "A personal portfolio website built to showcase my skills, projects, and achievements as a web developer. Designed using modern technologies for an attractive and responsive user experience.",
-      languages: ["HTML", "JS", "Tailwind", "ReactJS"],
-    },
-    {
-      title: "Online Resume Builder-Web", 
-      description: "An intuitive web-based resume builder for creating professional resumes.",
-      languages: ["HTML", "CSS", "JS"],
-    },
-    {
-      title: "Get GitHub Account Info", 
-      description: "A tool to fetch and display GitHub account information.",
-      languages: ["HTML", "CSS", "ReactJS"],
-    },
-  ];
-
-  function getLanguageColor(language) {
-    const colors = {
-      HTML: "#e44d26",
-      CSS: "#2965f1",
-      JS: "#f0db4f",
-      ReactJS: "#61dafb",
-    };
-    return colors[language] || "#6b7280"; // Default color (gray)
-  }
 
   return (
     <section className="lg:h-screen flex py-16 md:py-20" id="portfolio">

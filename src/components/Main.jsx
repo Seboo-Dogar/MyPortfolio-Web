@@ -7,11 +7,11 @@ import { TiArrowDown } from "react-icons/ti";
 import SebooImg from '../assets/Seboo.png';
 
 export default function Main() {
-    const mangeScrolling = () => {
-        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-    };
+  const handleScrollToAbout = () => {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
 
-    return (
+  return (
         <>
             <section className="py-20 lg:h-screen flex" id="home">
                 <div className="container mx-auto flex justify-center items-center px-10 lg:px-5">
@@ -49,7 +49,8 @@ export default function Main() {
                             {/* Scroll Down */}
                             <div className="hidden sm:block">
                                 <button
-                                    onClick={mangeScrolling}
+                                    type="button"
+                                    onClick={handleScrollToAbout}
                                     className="inline-flex items-center lg:mt-40 animate-bounce outline-none"
                                 >
                                     <CgMouse className="lg:mx-2 text-xl text-[#6c55e1]" /> 
